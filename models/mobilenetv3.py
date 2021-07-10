@@ -123,7 +123,7 @@ class MobileBottleneck(nn.Module):
 
 
 class MobileNetV3(nn.Module):
-    def __init__(self, num_classes=1000, input_size=224, dropout=0.2, mode='small', width_mult=1.0):
+    def __init__(self, num_classes=1000, input_size=224, dropout=0.5, mode='small', width_mult=1.0):
         super(MobileNetV3, self).__init__()
         input_channel = 16
         last_channel = 1280
